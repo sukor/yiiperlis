@@ -9,3 +9,23 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # Otherwise forward the request to index.php
 RewriteRule . index.php
 
+
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  RewriteCond %{REQUEST_URI} !^web
+  RewriteRule ^(.*)$ web/$1 [L]
+</IfModule>
+
+# Deny accessing below extensions
+<Files ~ "(.json|.lock|.git)">
+Order allow,deny
+Deny from all
+</Files>
+
+# Deny accessing dot files
+RewriteRule (^\.|/\.) - [F]
+

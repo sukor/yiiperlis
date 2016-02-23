@@ -14,6 +14,11 @@ http://stackoverflow.com/questions/27334090/class-yii-jui-datepicker-not-found-y
   ),
 
 
+yii-jui to /vendor/yiisoft
+
+jquery-ui to /vendor/bower
+
+
 RewriteEngine on
 # If a directory or a file exists, use the request directly
 RewriteCond %{REQUEST_FILENAME} !-f

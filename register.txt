@@ -13,6 +13,8 @@ http://stackoverflow.com/questions/27334090/class-yii-jui-datepicker-not-found-y
     ),
   ),
 
+in yiisoft/extensions.php file
+
 
 yii-jui to /vendor/yiisoft
 

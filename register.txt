@@ -2,6 +2,12 @@ http://sys.amtis.com.my/cregister/index?training_id=22
 http://stackoverflow.com/questions/27334090/class-yii-jui-datepicker-not-found-yii2-basic
 
 
+
+'select' => new JsExpression("function( event, ui ) {
+   $('.staffhidden').val(ui.item.id);
+}")
+
+
 ALTER TABLE job_history
  DROP FOREIGN KEY fk_job_history_branch1,DROP FOREIGN KEY fk_job_history_staff1,DROP FOREIGN KEY fk_job_history_status1
 
